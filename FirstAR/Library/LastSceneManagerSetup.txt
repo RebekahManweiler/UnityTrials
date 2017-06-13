@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/FirstARScene.unity
+  isLoaded: 1
+  isActive: 1
