@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/FirstARScene.unity
+- path: Assets/Scenes/RolondaScene.unity
   isLoaded: 1
   isActive: 1

@@ -3,7 +3,7 @@ Copyright (c) 2010-2014 Qualcomm Connected Experiences, Inc.
 All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
-
+using System.Collections;
 using UnityEngine;
 
 namespace Vuforia
@@ -14,13 +14,13 @@ namespace Vuforia
     public class DefaultTrackableEventHandler : MonoBehaviour,
                                                 ITrackableEventHandler
     {
+
         #region PRIVATE_MEMBER_VARIABLES
- 
+
         private TrackableBehaviour mTrackableBehaviour;
     
         #endregion // PRIVATE_MEMBER_VARIABLES
-
-
+        
 
         #region UNTIY_MONOBEHAVIOUR_METHODS
     
@@ -70,6 +70,7 @@ namespace Vuforia
         {
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+            
 
             // Enable rendering:
             foreach (Renderer component in rendererComponents)
@@ -83,8 +84,29 @@ namespace Vuforia
                 component.enabled = true;
             }
 
+            Animation[] animationArray = gameObject.GetComponentsInChildren<Animation>();
+            foreach (Animation _animation in animationArray)
+            {
+                if (_animation != null)
+                {
+                    _animation.Play();
+                    Debug.Log("Animation found");
+                }
+                else
+                {
+                    Debug.Log("Animation not found");
+                }
+                //DoAnimation();
+            }
+
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
+
+        //this doesn't work so how can I make the "engineering" animation wait a few seconds to start after the "we are" animation begins?
+        /*IEnumerator DoAnimation()
+        {
+            yield return new WaitForSeconds(2f);
+        }*/
 
 
         private void OnTrackingLost()
