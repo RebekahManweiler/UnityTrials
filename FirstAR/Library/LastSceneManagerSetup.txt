@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/RolondaScene.unity
+- path: Assets/Scenes/RebekahScene.unity
   isLoaded: 1
   isActive: 1
