@@ -151,11 +151,14 @@
     <Compile Include="Assets\Vuforia\Editor\Scripts\VuforiaConfigurationEditor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\OliviaPages4-front\authoringinfo.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\iOS\Vuforia.UnityExtensions.iOS.XML" />
     <None Include="Assets\StreamingAssets\QCAR\FirstARDatabase.xml" />
     <None Include="Assets\StreamingAssets\QCAR\OliviaPages.xml" />
     <None Include="Assets\StreamingAssets\QCAR\TargetPages.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\OliviaPages4-front.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\OliviaTargetPages.xml" />
     <None Include="Assets\Vuforia\Editor\Scripts\Vuforia.UnityExtensions.Editor.XML" />
     <None Include="Assets\Vuforia\Editor\WebcamProfiles\profiles.xml" />
     <None Include="Assets\Vuforia\Scripts\Internal\Vuforia.UnityExtensions.XML" />

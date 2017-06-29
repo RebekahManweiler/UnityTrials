@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Olivia_frontpage" size="1.000000 0.750000" />
+    <ImageTarget name="Olivia_page10" size="1.000000 1.776912" />
+    <ImageTarget name="Olivia_page9" size="1.000000 1.215091" />
+    <ImageTarget name="Olivia_page8" size="1.000000 1.271764" />
+    <ImageTarget name="Olivia_page7" size="1.000000 1.835685" />
+    <ImageTarget name="Olivia_page6" size="1.000000 0.750000" />
+    <ImageTarget name="Olivia_page5" size="1.000000 0.750000" />
+    <ImageTarget name="Olivia_page4" size="1.000000 0.750000" />
+  </Tracking>
+</QCARConfig>
